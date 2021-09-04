@@ -1,0 +1,37 @@
+{
+  "name": "logging-helper--example",
+  "version": "0.0.1",
+  "description": "Examples for logging-helper@1.x.x",
+  "main": "./dist/cjs/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "tsc": "tsc",
+    "del": "rimraf",
+    "test": "jest",
+    "cp": "fse copy",
+    "clean": "npm run del ./dist/*",
+    "build": "npm run clean && tsc --project tsconfig.json",
+    "exec": "node ./dist/cjs/index.js",
+    "exec:build": "npm run build && npm run exec"
+  },
+  "keywords": [
+    "logging-helper"
+  ],
+  "author": "SimplyAppdevs <requestinfo@simplyappdevs.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@simplyappdevs/logging-helper": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.10",
+    "jest": "^27.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:simplyappdevs/cidr-calculator-example.git"
+  }
+}

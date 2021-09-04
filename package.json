@@ -1,0 +1,28 @@
+{
+  "name": "cidr-calculator-example",
+  "version": "1.0.0",
+  "description": "Example for @simplyappdevs/cidr-calculator ESM and CommonJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:cjs": "cd cjs && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplyappdevs/cidr-calculator-example.git"
+  },
+  "keywords": [
+    "ESM",
+    "cJS",
+    "MJS"
+  ],
+  "author": "SimplyAppDevs <requestinfo@simplyappdevs.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/simplyappdevs/cidr-calculator-example/issues"
+  },
+  "homepage": "https://github.com/simplyappdevs/cidr-calculator-example#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1"
+  }
+}
