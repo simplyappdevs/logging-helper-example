@@ -84,8 +84,10 @@ const criticalError = (step: string) => {
 const buildMsg = (entry: LogEntry | LogEntryWithDuration) => {
   let msg = `${entry.entryTS.toISOString()}: [${entry.modName || '-'}]:[${entry.fnName || '-'}] (${entry.task || '-'}) ${entry.friendlyMsg}`;
 
-  if ((entry as LogEntryWithDuration).durationIsMS) {
-    msg += ` Duration: ${entry.durationIsMS} msecs`;
+  const entryD = entry as LogEntryWithDuration;
+
+  if (entryD.durationInMS) {
+    msg += ` Duration: ${entryD.durationInMS} msecs`;
   }
 
   if (entry.detailMsg) {
