@@ -1,4 +1,4 @@
-# Example for @simplyappdevs/logging-helper
+# CommonJS example for `logging-helper` module
 
 ## How To Build
 
